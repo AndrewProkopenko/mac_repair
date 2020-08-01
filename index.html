@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service MacBook - Выездной сервис по ремонту MacBook</title> 
+     
+    <link rel="preload"  href="assets/css/style.css" as="style" >
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.ico">  
+</head>
+<body>
+    
+    <div id="top"></div>
+    <!-- header start --> 
+    <header> 
+    <div class="ac-header"> 
+        <div class="container-fluid ">
+            <div class="container p-0 pl-sm-3 pr-sm-3"> 
+                    <nav class="navbar navbar-expand-lg navbar-light pl-0 pr-0">
+                        <a class="ac-header_logo js-link-top" href="#top">
+                            <div class="ac-header_logo__image">
+                                <svg>
+                                    <use xlink:href="#logo"></use>
+                                </svg>
+                           </div>
+                            <div class="ac-header_logo__text">
+                                <div>Service MacBook</div>
+                                <div>Выездной сервис по ремонту MacBook</div>
+                            </div>
+                        </a>
+                        <button class="navbar-toggler js-navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            <i>
+                                <svg class="d-none">
+                                    <use xlink:href="#close"></use>
+                                </svg>
+                            </i>
+                        </button>
+        
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="ac-header_collapse">
+                                <div class="ac-header_collapse__select">
+                                    <label >Ваш город:</label>
+                                    <select  id="yourcity">
+                                        <option selected>Самара</option>
+                                        <option>Санкт-Петербург</option>
+                                        <option>Москва</option> 
+                                        <option>Ростов</option> 
+                                        <option>Волгоград</option>
+                                        <option>Воронеж</option>
+                                        <option>Екатеринбург</option>
+                                        <option>Казань</option> 
+                                    </select> 
+                                </div>
+                                <div class="navbar-nav ac-header_collapse__menu"> 
+                                    <a class="nav-item js-link" href="#advantages">Преимущества</a>    
+                                    <a class="nav-item js-link" href="#prices">Прайс</a> 
+                                    <a class="nav-item js-link" href="#about">О нас</a>  
+                                    <a class="nav-item js-link" href="#contacts">Контакты</a>  
+                                </div>
+                                <div class="ac-header_collapse__phone">
+                                    <div class="btn-custom-header">
+                                        <button type="button"   data-service=""  data-toggle="modal" data-target="#exampleModal">
+                                            <span>
+                                                Оставить заявку
+                                            </span>
+                                        </button> 
+                                    </div>
+                                    <div class="ac-header_collapse__phone-number"> 
+                                        <a href="tel:+71111111111">+71111111111</a>
+                                    </div> 
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </nav> 
+            </div>
+        </div> 
+    </div> 
+    </header> 
+    <!-- header end -->
+
+    
+    <!-- main-banner start  -->
+    <div class="mac-main-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-7">
+                    <div class="mac-main-banner_content">
+                        <h1>
+                            Ремонт Macbook <br class="d-lg-none">
+                            в Санкт-Петербурге 
+                        </h1>
+                        <h5>
+                            <svg> 
+                                <use xlink:href="#map"></use>
+                            </svg> 
+                            <span>
+                                С Беслатным выездом к вам
+                            </span>
+                        </h5>
+                        <p>
+                            Задача организации, в особенности же дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития. Повседневная практика показывает, что постоянное информационно-пропагандистское
+                        </p>
+                        <div class="mac-main-banner_content-form">
+                            <form>
+                                    <div class="mac-main-banner_content-form__group">
+                                        <span>
+                                            <input type="tel" name="phone" required placeholder="Ваш телефон">
+                                        </span>
+                                        <div class="btn-form">
+                                            <button type="submit">
+                                                Вызвать мастера
+                                            </button>
+                                        </div>
+                                    </div>
+                            </form>
+                            <span>
+                                Нажимая кнопку "Вызвать мастера" Вы соглашаетесь на обработку Ваших персональных данных
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="mac-main-banner-image d-none d-lg-block">
+                        <div class="image" style="background-image: url(assets/img/mb-image.png);"></div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- main-banner end  -->
+    
+
+    <!-- advantages start -->
+    <div class="mac-adv-mouse d-none d-lg-block">
+        <div class="mac-adv-mouse_item">
+            <span></span>
+            <svg>
+                <use xlink:href="#mouse"></use>
+            </svg>
+        </div>
+    </div>
+    <div class="mac-adv heading">
+        <div id="advantages"></div>
+        
+        
+        <div class="container">
+            <h3>
+                Выбирая 
+                <span>ремонт MacBook</span>
+                в нашем сервисе вы получите
+            </h3>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6   col-lg-auto">
+                    <div class="mac-adv_item"  data-service=""  data-toggle="modal" data-target="#exampleModal">
+                        <svg>
+                            <use xlink:href="#search"></use>
+                        </svg>
+                        <h6>
+                            Только проверенных <br>
+                            специалистов 
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6   col-lg-auto">
+                    <div class="mac-adv_item"  data-service=""  data-toggle="modal" data-target="#exampleModal">
+                        <svg>
+                            <use xlink:href="#like"></use>
+                        </svg>
+                        <h6>
+                            Только проверенных <br>
+                            специалистов 
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6   col-lg-auto">
+                    <div class="mac-adv_item"  data-service=""  data-toggle="modal" data-target="#exampleModal">
+                        <svg>
+                            <use xlink:href="#settings"></use>
+                        </svg>
+                        <h6>
+                            Только проверенных <br>
+                            специалистов 
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6  col-lg-auto">
+                    <div class="mac-adv_item"  data-service=""  data-toggle="modal" data-target="#exampleModal">
+                        <svg>
+                            <use xlink:href="#warranty"></use>
+                        </svg>
+                        <h6>
+                            Только проверенных <br>
+                            специалистов 
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 pr-lg-0 col-lg-auto">
+                    <div class="mac-adv_item "  data-service=""  data-toggle="modal" data-target="#exampleModal">
+                        <svg>
+                            <use xlink:href="#sale"></use>
+                        </svg>
+                        <h6>
+                            Только проверенных <br>
+                            специалистов 
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- advantages start -->
+      
+    <!-- prices start  -->  
+    <div id="app">  
+        <div id="prices"></div>
+        <div class="mac-price heading">
+            <div class="container ">
+                <h3>
+                    Цены
+                    <span>
+                        на ремонт
+                    </span>
+                    MacBook
+                </h3>
+                <div class="mac-price-scroll">
+                    <div class="swiper-container">
+                        <div class="swiper-scrollbar"></div>
+                        
+                        <div class="swiper-wrapper">  
+                                <div class="swiper-slide" v-for="product in products" :key="product.id" >
+                                    <div class="mac-price-scroll_item" 
+                                        :class="(isActiveProduct === product.id) ? 'active' : '' "  
+                                        @click='setActiveProduct(product)'
+                                    >
+                                        <div class="mac-price-scroll_item__image" v-bind:style="{ 'background-image': 'url(assets/img/macbooks/' + product.url + ')' }"></div>
+                                        <div class="mac-price-scroll_item__text">
+                                            {{ product.name }}
+                                            <div>  {{ product.year }}</div>
+                                        </div>
+                                    </div>
+                                </div>  
+                                
+                                
+                                
+                        </div> 
+                        
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row ">
+                    <div class="mac-price_block">
+                        <!-- Free services -->
+                        <div class="mac-price_block_item disabled">
+                            <div class="title">
+                                Выезд мастера
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">
+                                    Бесплатно
+                                </span>
+                                <span class="time">
+                                    от 1 часа
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mac-price_block_item disabled">
+                            <div class="title ">
+                                Доставить в <br>
+                                сервис-центр и обратно
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">
+                                    Бесплатно
+                                </span>
+                                <span class="time">
+                                    от 1 часа
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mac-price_block_item disabled">
+                            <div class="title">
+                                Диагностика  <br>
+                                Macbook Pro
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">
+                                    Бесплатно
+                                </span>
+                                <span class="time">
+                                    от 1 часа
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- loop service -->
+                        <div class="mac-price_block_item" 
+                            v-for='(service, index) in services' 
+                            :key="index"
+                            @click="setActiveServices(service.id)"
+                            :class="service.classActive ? 'active' : '' "
+                        >
+                            <div class="title">
+                                {{ service.name }}
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">  
+                                    от {{ service.activePrice  }} Руб. 
+                                </span>
+                                <span class="time">
+                                {{ service.time }} 
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="mac-price_form">
+                        <h5>
+                            Вызовите мастера бесплатно
+                        </h5>
+                        <p>
+                            Замена и ремонт интегрированных элементов, расположенной на материнской плате без учета стоимости запасных частей
+                        </p> 
+                        <div class="mac-price_form-select">
+                            <select class="priceSelect">
+                                <option selected>Замена элементов</option>
+                                <option>Замена блока питания </option>
+                                <option>Замена клавиатуры</option>
+                                <option>Замена макбука</option>  
+                            </select> 
+                        </div>
+                    <div v-if='this.formPriceSum > 0'>
+                            <h6>
+                                Цена ремонта
+                            </h6>
+                            <div class="mac-price_form-price ">
+                                от &nbsp;
+                                <div class="price">  
+                                    {{ this.formPriceSum }}
+                                </div>
+                                &nbsp; Рублей
+                            </div>
+                    </div>
+                    <div v-else>
+                            <h6 class="mb-3">
+                                Выберите поломку чтобы посчитать стоимость ремонта
+                            </h6>
+                    </div>
+                        <form>
+                            <div class="mac-price_form_group">
+                                <span>
+                                    <input type="hidden" name="services" v-model="formServices" >
+                                </span>
+                                <span>
+                                    <input type="hidden" name="product" v-model="changedProduct.name" >
+                                </span>
+                                <span>
+                                    <input type="hidden" name="price" v-model="formPriceSum" >
+                                </span>
+                                <span>
+                                    <input type="text" name="name" required placeholder="Ваше имя">
+                                </span>
+                                <span>
+                                    <input type="tel" name="phone" required placeholder="Ваш телефон">
+                                </span> 
+                                <div class="btn-form">
+                                    <button type="submit">
+                                        Вызвать мастера
+                                    </button>
+                                </div> 
+                            </div>
+                        </form>
+                        <span>
+                            Нажимая кнопку "Вызвать мастера" Вы соглашаетесь на обработку Ваших персональных данных
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div> 
+    </div> 
+    <!-- prices end -->
+
+
+      <!-- accordion start  -->
+    <div class="container">
+        <div class="mac-accordion heading">
+            <h3>Только <span>качественные</span> комплектующие</h3>
+
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="accordion" id="service_accordion">
+                
+                        <div class="mac-accordion_card ">
+                          <div class="mac-accordion_card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="mac-accordion_card-header_btn collapsed " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <i class="icon"></i>
+                                <span>
+                                    Дисплей класса Original
+                                </span>
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse multi-collapse" aria-labelledby="headingOne" data-parent="#service_accordion">
+                            <div class="mac-accordion_card-body">
+                                Да, при последующем ремонте мы проводим диагностику бесплатно. Стоимость услуг диагностики в случае отказа от ремонта составляет 150 грн.
+                            </div>
+                          </div>
+                        </div>
+        
+        
+                        <div class="mac-accordion_card ">
+                          <div class="mac-accordion_card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="mac-accordion_card-header_btn collapsed " type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="icon"></i>
+                                <span>
+                                    Аккумуляторы
+                                </span>
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseTwo" class="collapse multi-collapse" aria-labelledby="headingOne" data-parent="#service_accordion">
+                            <div class="mac-accordion_card-body">
+                                Нет, выезд к клиенту мы в любом случае осуществляем бесплатно. Вы можете сэкономить свое время, вызвав мастера на дом.
+        
+                            </div>
+                          </div>
+                        </div>
+        
+        
+                        <div class="mac-accordion_card ">
+                          <div class="mac-accordion_card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="mac-accordion_card-header_btn collapsed " type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="icon"></i>
+                                <span>
+                                    Шлейфы
+                                </span>
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseThree" class="collapse multi-collapse" aria-labelledby="headingOne" data-parent="#service_accordion">
+                            <div class="mac-accordion_card-body">
+                                Если компьютер работает, перенесите важные данные с диска С на любые другие диски или флешки. Если у вас не получится это сделать, наш мастер сам создаст резервную копию ваших данных, и они не потеряются.
+        
+                            </div>
+                          </div>
+                        </div>
+        
+        
+                        <div class="mac-accordion_card ">
+                          <div class="mac-accordion_card-header" id="headingFour">
+                            <h2 class="mb-0">
+                              <button class="mac-accordion_card-header_btn collapsed " type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="icon"></i>
+                                <span>
+                                    Кнопки
+                                </span>
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseFour" class="collapse multi-collapse" aria-labelledby="headingOne" data-parent="#service_accordion">
+                            <div class="mac-accordion_card-body">
+                                Каждому клиенту мы предоставляем чек и гарантийный талон. В зависимости от вида услуг срок гарантии может составлять до 3 лет.
+        
+                            </div>
+                          </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mac-accordion__image d-none d-lg-block" >
+                        <div class="image" style="background-image: url(assets/img/accordion.jpg);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- accordion end  -->
+
+    <!-- form free start  -->
+    <div class="mac-formblock heading">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="mac-formblock_image d-none d-lg-block">
+                        <div class="image" style="background-image: url(assets/img/form-man.png);"></div>
+                    </div> 
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="mac-formblock_item">
+                        <h3>Вызвать мастера - это бесплатно</h3>
+                        <div class="h-5">
+                            Оставьте заявку на выезд мастера и он приедет к Вам в течении 40 минут!
+                        </div>
+                        <form>
+                            <div class="mac-price_form_group">
+                                <span>
+                                    <input type="hidden" name="service" value=''>
+                                </span>
+                                <span>
+                                    <input type="text" name="name" required placeholder="Ваше имя">
+                                </span>
+                                <span>
+                                    <input type="tel" name="phone" required placeholder="Ваш телефон">
+                                </span> 
+                                <div class="btn-form">
+                                    <button type="submit">
+                                        Вызвать мастера
+                                    </button>
+                                </div> 
+                            </div>
+                        </form>
+                        <span>
+                            Нажимая кнопку "Вызвать мастера" Вы соглашаетесь на обработку данных
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- form free end -->
+
+
+    <!-- about start  -->
+    <div class="mac-about">
+        <div id="about"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="mac-about_logo">
+                        <div class="mac-about_logo__text">
+                            Service <br>
+                            MacBook
+                        </div>
+                        <div class="mac-about_logo__icon">
+                            <svg>
+                                <use xlink:href="#company"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="mac-about_content">
+                        <div class="h-5">
+                            Сеть сервисных центров Apple в Санкт-Петербурге
+                        </div>
+                        <div class="h-6">
+                            Рядом с вами
+                        </div>
+                        <p>
+                            Уже более 12 лет мы занимаемся ремонтом макбуков Apple. За это довольно продолжительное время мы 
+                            накопили огромный опыт по диагностике и ремонту электронной техники, и, те неисправности, ремонт 
+                            которых, занимает у друних дни и недели, мы можем устранить, почти навчегда, в течении 1-2 часов.
+                            Яблочный сервис предлагает свои услуги по обслуживанию  и ремонту Macbook Pro в Приморском, 
+                            Центральном и Московском районах Санкт-Петербурга, у нас всегда в наличии большой ассортимент 
+                            оригинальных деталей и расходных материалов для всех моделей макбуков.
+                            Если ваш Macbook сломался  - не беда. Смело обращайтесь к нам, а наши высококвалифицированные и
+                            аккуратные специалисты отремонтируют вам компьютер в кротчайшие сроки. С гарантией на замененные 
+                            детали или компоненты и на выполненные работы. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about end -->
+ 
+ 
+    <!-- contacts start  -->
+    <div class="container-fluid position-relative">  
+        <div id="contacts"></div>
+        <div class="container">
+            <div class="service-contact  ">
+                <div class="row"> 
+                    <div class="col-12 col-lg-6  ">
+                        <div class="service-contact_item">
+                            <h3>Наши контакты</h3>
+                            <div class="h-5"> Звоните сейчас, мы сориентируем вас по цене  </div>
+                            <div class="tel">
+                                <svg>
+                                    <use xlink:href='#phone'></use>
+                                </svg>
+                                <a href="tel:++71111111111">+71111111111</a>
+                            </div>
+                            <form action="#">
+                                <p>Задайте нам вопрос</p>
+                                <div class="kr-form">
+                                    <div class="kr-form-inputs">
+                                        <span>
+                                            <input name="name" type="text" placeholder="Ваше имя" required>
+                                        </span>
+                                        <span>
+                                            <input name="phone" type="tel" placeholder="Ваш телефон" required>
+                                        </span>
+                                    </div>
+                                    <textarea  cols="30" rows="10" placeholder="Ваш коментарий" ></textarea>
+                                </div>
+                                <div class="service-contact_item-btn">
+                                    <div class="btn-custom">
+                                        <button type="submit">
+                                            <span>Отправить</span>
+                                        </button>
+                                        
+                                    </div>
+                                    <span>Нажимая на кнопку "Отправить" Вы соглашаетесь на обработку Ваших данных</span>
+                                </div>
+                               
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 p-0 position-static "> 
+                        <div class="map" style="background-color: #004fb7;">
+                            <div id="yamap"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- contacts end  -->
+   
+
+    <!-- footer start -->
+    <footer>
+        <div class="container footer-thriangle"></div>
+        <div class="electro-footer">
+            <div class="container-fluid">
+                <div class="container electro-footer-container"> 
+                    <a class="electro-footer_logo js-link" href="#top"> 
+                        <div class="electro-footer_logo__image">
+                            <svg>   
+                                <use xlink:href="#logo"></use>
+                            </svg>
+                        </div>
+                        <div class="electro-footer_logo__text">
+                            <div>Service MacBook</div>
+                            <div>Выездной сервис по ремонту <br> MacBook</div>
+                        </div> 
+                    </a>
+                    <div class="electro-footer_menu"> 
+                        <a class="nav-item js-link" href="#advantages">Преимущества</a>  
+                        <a class="nav-item js-link" href="#prices">Прайс</a> 
+                        <a class="nav-item js-link" href="#about">О нас</a>  
+                        <a class="nav-item js-link" href="#contacts">Контакты</a> 
+                    </div>
+                    <div class="electro-footer_tools ">
+                                
+                        <div class="electro-footer_tools-phone"> 
+                            <div class="number"> 
+                                <a href="tel:+71111111111">
+                                    
+                                    +71111111111
+                                </a>
+                            </div>
+                            <div class="btn-footer">
+                                <button type="button"   data-service=""  data-toggle="modal" data-target="#exampleModal"> 
+                                        Оставить заявку 
+                                </button> 
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+               
+            </div> 
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Modal -->
+    <div class="service-modal modal fade" id="exampleModal" tabindex="-1" role="dialog"   aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header"> 
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"> 
+                <span class="modal-close">
+                    <svg>
+                        <use xlink:href="#close"></use>
+                    </svg>
+                </span>
+            </span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="service-modal-container">
+                
+                <div class="service-modal-container__item">
+                     
+                    <div class="h-3">
+                        Связь с нами
+                    </div>
+                    <div class="h-6">Заполните форму ниже и мы перезвоним Вам  в течение 5 минут</div>
+                    
+                    
+                    <form name="modalForm" > 
+                        
+                        
+                        <span>
+                            <input id="js-form-service" name="service" value='12' type="hidden">
+                        </span>
+                        
+                        <span>
+                            <input name="name" type="text" placeholder="Ваше имя" required>
+                        </span>
+                        <span>
+                            <input name="phone" type="tel" placeholder="Ваш телефон" required> 
+                        </span>
+                        <div class="btn-custom-header">
+                            <button type="button"   data-service=""  data-toggle="modal" data-target="#exampleModal">
+                                <span>
+                                    Перезвоните мне
+                                </span>
+                            </button> 
+                        </div>
+                    </form>
+                    <span>Нажимая кнопку "Перезвоните мне" Вы соглашаетесь на обработку Ваших персональных данных</span>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+    </div>
+    </div>
+ 
+   
+<svg display="none">  
+    <symbol id="logo"  viewBox="0 0 512 512">
+        <path style="fill:#698F92;" d="M456.313,80.958H55.687c-13.512,0-24.467,10.955-24.467,24.467v280.882h449.56V105.426
+	C480.78,91.912,469.825,80.958,456.313,80.958z"/>
+<path style="opacity:0.15;fill:#231F20;enable-background:new    ;" d="M73.495,80.958H55.687
+	c-13.512,0-24.467,10.955-24.467,24.467v280.882h17.809V105.426C49.028,91.912,59.984,80.958,73.495,80.958z"/>
+<path style="fill:#53CAF9;" d="M447.219,398.604c0,7.376-5.98,13.357-13.357,13.357H78.138c-7.376,0-13.357-5.98-13.357-13.357
+	V129.171c0-7.376,5.98-13.357,13.357-13.357h355.724c7.376,0,13.357,5.98,13.357,13.357V398.604z"/>
+<path style="fill:#F5F5F5;" d="M433.862,115.815H105.375v33.238h341.843v-19.881C447.219,121.794,441.238,115.815,433.862,115.815z"
+	/>
+<g>
+	<path style="fill:#A8E2EF;" d="M221.46,275.91H111.267c-4.61,0-8.348-3.738-8.348-8.348s3.738-8.348,8.348-8.348H221.46
+		c4.611,0,8.348,3.738,8.348,8.348C229.808,272.172,226.07,275.91,221.46,275.91z"/>
+	<path style="fill:#A8E2EF;" d="M221.46,312.006H111.267c-4.61,0-8.348-3.738-8.348-8.348s3.738-8.348,8.348-8.348H221.46
+		c4.611,0,8.348,3.738,8.348,8.348C229.808,308.268,226.07,312.006,221.46,312.006z"/>
+	<path style="fill:#A8E2EF;" d="M221.46,348.102H111.267c-4.61,0-8.348-3.738-8.348-8.348s3.738-8.348,8.348-8.348H221.46
+		c4.611,0,8.348,3.738,8.348,8.348S226.07,348.102,221.46,348.102z"/>
+	<path style="fill:#A8E2EF;" d="M410.676,217.044c0,7.377-5.979,13.357-13.357,13.357H112.381c-7.377,0-13.357-5.979-13.357-13.357
+		v-19.701c0-7.376,5.979-13.357,13.357-13.357H397.32c7.377,0,13.357,5.98,13.357,13.357V217.044z"/>
+	<path style="fill:#A8E2EF;" d="M410.676,326.397c0,7.377-5.979,13.357-13.357,13.357H269.357c-7.377,0-13.357-5.979-13.357-13.357
+		v-45.478c0-7.377,5.979-13.357,13.357-13.357H397.32c7.377,0,13.357,5.979,13.357,13.357V326.397z"/>
+</g>
+<path style="fill:#F2304D;" d="M111.267,149.053v-33.238H78.138c-7.376,0-13.357,5.98-13.357,13.357v19.881H111.267z"/>
+<path style="opacity:0.15;fill:#231F20;enable-background:new    ;" d="M82.4,398.604V129.171c0-7.376,5.979-13.357,13.357-13.357
+	H78.138c-7.376,0-13.357,5.98-13.357,13.357v269.432c0,7.376,5.98,13.357,13.357,13.357h17.618
+	C88.379,411.96,82.4,405.981,82.4,398.604z"/>
+<path style="fill:#DBDDDD;" d="M504.209,380.742H7.791c-4.303,0-7.791,3.488-7.791,7.791v16.098
+	c0,14.564,11.847,26.411,26.41,26.411h459.178c14.563,0,26.411-11.848,26.411-26.411v-16.098
+	C512,384.23,508.512,380.742,504.209,380.742z"/>
+<path style="fill:#EAE9E8;" d="M182.461,380.742v11.795c0,7.376,5.98,13.357,13.357,13.357h120.365
+	c7.377,0,13.357-5.98,13.357-13.357v-11.795L182.461,380.742L182.461,380.742z"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+    </symbol> 
+    <symbol id="close" viewBox="0 0 329.26933 329">
+        <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+    </symbol>   
+    
+    <symbol id="company" viewBox="0 0 512 512" >
+        <g>
+            <path d="M185.255,512c-76.201-0.439-139.233-155.991-139.233-235.21c0-129.404,97.075-157.734,134.487-157.734   c16.86,0,34.863,6.621,50.742,12.48c11.104,4.087,22.588,8.306,28.975,8.306c3.823,0,12.832-3.589,20.786-6.738   c16.963-6.753,38.071-15.146,62.651-15.146c0.044,0,0.103,0,0.146,0c18.354,0,74.004,4.028,107.461,54.272l7.837,11.777   l-11.279,8.511c-16.113,12.158-45.513,34.336-45.513,78.267c0,52.031,33.296,72.041,49.292,81.665   c7.061,4.248,14.37,8.628,14.37,18.208c0,6.255-49.922,140.566-122.417,140.566c-17.739,0-30.278-5.332-41.338-10.034   c-11.191-4.761-20.845-8.862-36.797-8.862c-8.086,0-18.311,3.823-29.136,7.881C221.496,505.73,204.752,512,185.753,512H185.255z"/>
+            <path d="M351.343,0c1.888,68.076-46.797,115.304-95.425,112.342C247.905,58.015,304.54,0,351.343,0z"/>
+        </g>
+    </symbol> 
+    <symbol id="like" viewBox="0 0 512 512" >
+        <g>
+            <g>
+                <path d="M469.51,317c7.14-7.97,11.49-18.49,11.49-30c0-24.81-20.19-45-45-45h-87.34c8.65-26.25,12.34-61.08,12.34-76.01V151
+                    c0-33.08-26.92-60-60-60h-15c-6.88,0-12.88,4.68-14.55,11.36l-8.17,32.69c-11.45,45.78-47.8,96.29-85.42,105.47
+                    C171.27,223.84,155,212,136,212H46c-8.28,0-15,6.72-15,15v270c0,8.28,6.72,15,15,15h90c17.89,0,33.37-10.49,40.62-25.65
+                    l51.54,17.18c16.85,5.62,34.41,8.47,52.18,8.47H406c24.81,0,45-20.19,45-45c0-5.85-1.12-11.45-3.16-16.58
+                    C466.92,445.21,481,427.72,481,407c0-11.51-4.35-22.03-11.49-30c7.14-7.97,11.49-18.49,11.49-30S476.65,324.97,469.51,317z
+                     M151,467c0,8.27-6.73,15-15,15H61V242h75c8.27,0,15,6.73,15,15V467z M406,332h30c8.27,0,15,6.73,15,15c0,8.27-6.73,15-15,15h-30
+                    c-8.28,0-15,6.72-15,15c0,8.28,6.72,15,15,15h30c8.27,0,15,6.73,15,15c0,8.27-6.73,15-15,15h-30c-8.28,0-15,6.72-15,15
+                    c0,8.28,6.72,15,15,15c8.27,0,15,6.73,15,15c0,8.27-6.73,15-15,15H280.34c-14.54,0-28.91-2.33-42.7-6.93L181,456.19V270.58
+                    c23.53-4.47,46.56-19.37,67.35-43.76c20.3-23.82,36.76-55.4,44.03-84.49l5.33-21.33H301c16.54,0,30,13.46,30,30v14.99
+                    c0,20.14-6.3,58.77-14.36,76.01H286c-8.28,0-15,6.72-15,15c0,8.28,6.72,15,15,15h150c8.27,0,15,6.73,15,15c0,8.27-6.73,15-15,15
+                    h-30c-8.28,0-15,6.72-15,15C391,325.28,397.72,332,406,332z"/>
+            </g>
+        </g>
+        <g>
+            <g>
+                <circle cx="106" cy="437" r="15"/>
+            </g>
+        </g>
+        <g>
+            <g>
+                <path d="M316,0c-8.284,0-15,6.716-15,15v31c0,8.284,6.716,15,15,15s15-6.716,15-15V15C331,6.716,324.284,0,316,0z"/>
+            </g>
+        </g>
+        <g>
+            <g>
+                <path d="M252.36,66.148l-21.213-21.213c-5.857-5.858-15.355-5.858-21.213,0c-5.858,5.858-5.858,15.355,0,21.213l21.213,21.213
+                    c5.857,5.857,15.356,5.858,21.213,0C258.218,81.503,258.218,72.006,252.36,66.148z"/>
+            </g>
+        </g>
+        <g>
+            <g>
+                <path d="M422.066,44.935c-5.857-5.858-15.355-5.858-21.213,0L379.64,66.147c-5.858,5.858-5.858,15.355,0,21.213
+                    c5.857,5.858,15.355,5.859,21.213,0.001l21.213-21.213C427.924,60.29,427.924,50.793,422.066,44.935z"/>
+            </g>
+        </g>
+    </symbol> 
+    <symbol id="map" viewBox="0 0 511.987 511.987" >
+        <g><path d="m207.993 123.993c-13.233 0-24-10.767-24-24s10.767-24 24-24 24 10.767 24 24-10.766 24-24 24z"/><path d="m511.477 439.169-39-259.997c-3.4-22.702-22.532-39.18-45.493-39.18h-148.555c13.072-24.73 12.843-53.822-.828-78.611-13.822-25.065-38.887-40.523-67.054-41.352-1.686-.049-3.418-.049-5.115 0-28.161.828-53.226 16.287-67.048 41.352-13.665 24.779-13.899 53.858-.826 78.611h-52.555c-22.961 0-42.093 16.478-45.493 39.176l-39 260.001c-1.987 13.256 1.89 26.684 10.637 36.84 8.748 10.157 21.452 15.982 34.856 15.982h419.98c13.404 0 26.108-5.825 34.856-15.982 8.748-10.154 12.625-23.582 10.638-36.84zm-345.07-362.334c8.423-15.273 22.99-24.319 39.962-24.818.536-.016 1.08-.023 1.625-.023s1.089.008 1.619.023c16.978.499 31.545 9.545 39.968 24.818 8.798 15.954 8.554 34.79-.651 50.392l-40.936 68.92-40.924-68.9c-9.217-15.606-9.465-34.452-.663-50.412zm310.186 378.294c-1.564 1.816-5.023 4.864-10.609 4.864h-289.876c.747-7.5 4.218-18.771 17.343-25.973 7.747-4.251 10.581-13.977 6.33-21.724s-13.979-10.581-21.725-6.33c-16.945 9.298-28.116 23.897-32.305 42.216-.979 4.279-1.452 8.29-1.643 11.811h-98.105c-5.586 0-9.045-3.048-10.609-4.864-1.564-1.817-4.065-5.689-3.237-11.212l39-260.003c1.035-6.907 6.858-11.92 13.847-11.92h71.425l31.046 52.271c4.348 7.343 12.018 11.727 20.519 11.727s16.171-4.384 20.506-11.707l31.059-52.291h167.426c6.988 0 12.812 5.013 13.847 11.923l39 259.999c.826 5.523-1.674 9.396-3.239 11.213z"/><path d="m277.053 220.814c-8.385-2.797-17.444 1.737-20.238 10.119-2.795 8.383 1.736 17.444 10.119 20.238.164.055 16.56 5.917 21.881 21.881 2.234 6.705 8.478 10.945 15.177 10.945 1.677 0 3.384-.266 5.062-.826 8.383-2.794 12.914-11.855 10.119-20.238-10.411-31.23-40.83-41.689-42.12-42.119z"/><path d="m290.621 321.587c-8.334-2.941-17.473 1.43-20.413 9.763-9.03 25.585-39.982 36.575-40.632 36.801-8.349 2.815-12.854 11.855-10.064 20.22 2.234 6.705 8.478 10.945 15.177 10.945 1.677 0 3.384-.266 5.062-.826 1.883-.627 46.287-15.841 60.634-56.49 2.94-8.333-1.431-17.472-9.764-20.413z"/></g>
+    </symbol> 
+    <symbol id="mouse"  viewBox="0 0 512 512" >
+        <g>
+            <g>
+                <path d="M256,0C156.595,0,75.726,82.14,75.726,183.099v145.807C75.726,429.865,156.595,512,256,512
+                    c99.399,0,180.274-81.886,180.274-182.534V183.099C436.274,82.14,355.399,0,256,0z M402.366,329.466
+                    c0,81.954-65.656,148.627-146.366,148.627c-80.705,0-146.366-66.927-146.366-149.192V183.099
+                    c0-82.265,65.661-149.192,146.366-149.192c80.711,0,146.366,66.927,146.366,149.192V329.466z"/>
+            </g>
+        </g>
+        <g>
+            <g>
+                <path d="M256,140.15c-9.364,0-16.954,7.59-16.954,16.954v59.338c0,9.364,7.59,16.954,16.954,16.954
+                    c9.364,0,16.954-7.59,16.954-16.954v-59.338C272.954,147.74,265.364,140.15,256,140.15z"/>
+            </g>
+        </g>
+    </symbol> 
+    <symbol id="phone"  viewBox="0 0 384 384"  >
+        <g>
+            <g>
+                <path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594
+                    c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448
+                    c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813
+                    C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z"
+                    />
+            </g>
+        </g>
+    </symbol> 
+    <symbol id="pin"  viewBox="0 0 512 512" >
+        <g>
+            <g>
+                <path d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035
+                    c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719
+                    c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z"/>
+            </g>
+        </g>
+    </symbol> 
+    <symbol id="sale" viewBox="0 0 512 512" >
+        <g><path d="m393.915 173.554-48.669-42.18c25.028-63.231-21.897-131.374-89.246-131.374-67.445 0-114.232 68.251-89.246 131.374l-48.669 42.18c-14.036 12.163-22.085 29.791-22.085 48.364v242.082c0 26.467 21.533 48 48 48h224c26.467 0 48-21.533 48-48v-242.082c0-18.572-8.05-36.2-22.085-48.364zm-137.915-141.554c40.262 0 70.591 36.886 62.782 76.439l-10.167-8.811c-30.214-26.187-75.069-26.141-105.231 0l-10.166 8.811c-7.798-39.499 22.47-76.439 62.782-76.439zm128 432c0 8.822-7.178 16-16 16h-224c-8.822 0-16-7.178-16-16v-242.082c0-9.286 4.025-18.1 11.042-24.182l44.603-38.656c14.555 16.656 34.508 27.858 56.354 31.57v1.35c0 8.836 7.164 16 16 16 8.837 0 16-7.164 16-16v-32c0-8.836-7.163-16-16-16-8.152 0-14.866 6.102-15.859 13.985-12.483-3.209-23.781-10.131-32.313-19.862l16.515-14.313c18.181-15.756 45.169-15.728 63.316 0 16.735 14.504 58.781 50.944 85.299 73.927 7.019 6.082 11.043 14.896 11.043 24.182z"/><path d="m321.823 259.37c-6.974-5.424-17.027-4.168-22.453 2.807l-112 144c-8.227 10.579-.521 25.824 12.619 25.824 4.768 0 9.487-2.123 12.641-6.178l112-144c5.425-6.975 4.168-17.028-2.807-22.453z"/><circle cx="312" cy="400" r="32"/><circle cx="200" cy="288" r="32"/></g>
+    </symbol> 
+    <symbol id="search"  viewBox="0 0 491.52 491.52"  >
+        <g>
+            <g>
+                
+                    <rect x="363.324" y="291.62" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -104.0326 352.5627)" width="20.48" height="20.48"/>
+            </g>
+        </g>
+        <g>
+            <g>
+                
+                    <rect x="334.357" y="262.636" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -92.0225 323.5907)" width="20.48" height="20.48"/>
+            </g>
+        </g>
+        <g>
+            <g>
+                <rect x="235.52" y="430.055" width="20.48" height="20.48"/>
+            </g>
+        </g>
+        <g>
+            <g>
+                <rect x="194.56" y="430.055" width="20.48" height="20.48"/>
+            </g>
+        </g>
+        <g>
+            <g>
+                <rect x="276.48" y="430.055" width="20.48" height="20.48"/>
+            </g>
+        </g>
+        <g>
+            <g>
+                <path d="M471.04,389.095V92.135H321.602c-5.758-20.084-16.487-39.029-32.277-54.82c-49.71-49.72-130.59-49.72-180.3,0
+                    c-15.791,15.791-26.521,34.736-32.28,54.82H20.48v296.96H0v55.44l46.96,46.96h397.6l46.96-46.96v-55.44H471.04z M123.505,51.795
+                    c20.865-20.86,48.265-31.29,75.67-31.29c27.405,0,54.805,10.43,75.67,31.29c41.72,41.72,41.72,109.62,0,151.34
+                    c-41.73,41.72-109.61,41.72-151.34,0C81.78,161.415,81.78,93.515,123.505,51.795z M298.663,234.584l-13.348-13.346
+                    c1.329-1.222,2.722-2.335,4.01-3.624c1.287-1.287,2.399-2.678,3.62-4.006l13.348,13.346L298.663,234.584z M337.355,224.855
+                    l63.8,63.8c5.45,5.45,8.45,12.69,8.45,20.4c0,7.7-3,14.94-8.45,20.39c-10.91,10.9-29.9,10.89-40.79,0l-63.805-63.8
+                    L337.355,224.855z M40.96,112.615h31.742c-4.352,37.403,7.689,76.367,36.323,105c24.855,24.86,57.5,37.28,90.15,37.28
+                    c24.416,0,48.826-6.956,69.981-20.856l15.027,15.024l-6.193,6.192c-5.73,5.73-5.73,15.05,0,20.78l67.89,67.89
+                    c9.315,9.32,21.705,14.45,34.88,14.45s25.56-5.13,34.875-14.45c9.315-9.31,14.45-21.7,14.45-34.87
+                    c0-13.18-5.135-25.57-14.45-34.88l-67.89-67.89c-5.73-5.74-15.05-5.74-20.78,0l-6.191,6.19l-15.03-15.027
+                    c16.726-25.456,23.299-55.616,19.899-84.833H450.56v276.48H40.96V112.615z M471.04,436.055l-34.96,34.96H55.44l-34.96-34.96
+                    v-26.48h450.56V436.055z"/>
+            </g>
+        </g>
+        <g>
+            <g>
+                <polygon points="258.495,74.845 173.925,159.415 138.805,124.295 124.325,138.775 173.925,188.375 272.975,89.325 		"/>
+            </g>
+        </g>
+    </symbol> 
+    <symbol id="settings"  viewBox="0 0 512 512" >
+        <path d="m256 133.609375c-67.484375 0-122.390625 54.90625-122.390625 122.390625s54.90625 122.390625 122.390625 122.390625 122.390625-54.90625 122.390625-122.390625-54.90625-122.390625-122.390625-122.390625zm0 214.183594c-50.613281 0-91.792969-41.179688-91.792969-91.792969s41.179688-91.792969 91.792969-91.792969 91.792969 41.179688 91.792969 91.792969-41.179688 91.792969-91.792969 91.792969zm0 0"/><path d="m499.953125 197.703125-39.351563-8.554687c-3.421874-10.476563-7.660156-20.695313-12.664062-30.539063l21.785156-33.886719c3.890625-6.054687 3.035156-14.003906-2.050781-19.089844l-61.304687-61.304687c-5.085938-5.085937-13.035157-5.941406-19.089844-2.050781l-33.886719 21.785156c-9.84375-5.003906-20.0625-9.242188-30.539063-12.664062l-8.554687-39.351563c-1.527344-7.03125-7.753906-12.046875-14.949219-12.046875h-86.695312c-7.195313 0-13.421875 5.015625-14.949219 12.046875l-8.554687 39.351563c-10.476563 3.421874-20.695313 7.660156-30.539063 12.664062l-33.886719-21.785156c-6.054687-3.890625-14.003906-3.035156-19.089844 2.050781l-61.304687 61.304687c-5.085937 5.085938-5.941406 13.035157-2.050781 19.089844l21.785156 33.886719c-5.003906 9.84375-9.242188 20.0625-12.664062 30.539063l-39.351563 8.554687c-7.03125 1.53125-12.046875 7.753906-12.046875 14.949219v86.695312c0 7.195313 5.015625 13.417969 12.046875 14.949219l39.351563 8.554687c3.421874 10.476563 7.660156 20.695313 12.664062 30.539063l-21.785156 33.886719c-3.890625 6.054687-3.035156 14.003906 2.050781 19.089844l61.304687 61.304687c5.085938 5.085937 13.035157 5.941406 19.089844 2.050781l33.886719-21.785156c9.84375 5.003906 20.0625 9.242188 30.539063 12.664062l8.554687 39.351563c1.527344 7.03125 7.753906 12.046875 14.949219 12.046875h86.695312c7.195313 0 13.421875-5.015625 14.949219-12.046875l8.554687-39.351563c10.476563-3.421874 20.695313-7.660156 30.539063-12.664062l33.886719 21.785156c6.054687 3.890625 14.003906 3.039063 19.089844-2.050781l61.304687-61.304687c5.085937-5.085938 5.941406-13.035157 2.050781-19.089844l-21.785156-33.886719c5.003906-9.84375 9.242188-20.0625 12.664062-30.539063l39.351563-8.554687c7.03125-1.53125 12.046875-7.753906 12.046875-14.949219v-86.695312c0-7.195313-5.015625-13.417969-12.046875-14.949219zm-18.550781 89.3125-36.082032 7.84375c-5.542968 1.207031-9.964843 5.378906-11.488281 10.839844-3.964843 14.222656-9.667969 27.976562-16.949219 40.878906-2.789062 4.941406-2.617187 11.019531.453126 15.792969l19.980468 31.078125-43.863281 43.867187-31.082031-19.980468c-4.773438-3.070313-10.851563-3.242188-15.789063-.453126-12.90625 7.28125-26.660156 12.984376-40.882812 16.949219-5.460938 1.523438-9.632813 5.945313-10.839844 11.488281l-7.84375 36.082032h-62.03125l-7.84375-36.082032c-1.207031-5.542968-5.378906-9.964843-10.839844-11.488281-14.222656-3.964843-27.976562-9.667969-40.878906-16.949219-4.941406-2.789062-11.019531-2.613281-15.792969.453126l-31.078125 19.980468-43.863281-43.867187 19.976562-31.078125c3.070313-4.773438 3.246094-10.851563.457032-15.792969-7.28125-12.902344-12.984375-26.65625-16.953125-40.878906-1.523438-5.460938-5.941407-9.632813-11.484375-10.839844l-36.085938-7.84375v-62.03125l36.082032-7.84375c5.542968-1.207031 9.964843-5.378906 11.488281-10.839844 3.964843-14.222656 9.667969-27.976562 16.949219-40.878906 2.789062-4.941406 2.617187-11.019531-.453126-15.792969l-19.980468-31.078125 43.863281-43.867187 31.082031 19.980468c4.773438 3.070313 10.851563 3.242188 15.789063.453126 12.90625-7.28125 26.660156-12.984376 40.882812-16.949219 5.460938-1.523438 9.632813-5.945313 10.839844-11.488281l7.84375-36.082032h62.03125l7.84375 36.082032c1.207031 5.542968 5.378906 9.964843 10.839844 11.488281 14.222656 3.964843 27.976562 9.667969 40.878906 16.949219 4.941406 2.789062 11.019531 2.613281 15.792969-.453126l31.078125-19.980468 43.863281 43.867187-19.976562 31.078125c-3.070313 4.773438-3.246094 10.851563-.457032 15.792969 7.285156 12.902344 12.984375 26.65625 16.953125 40.878906 1.523438 5.460938 5.941407 9.632813 11.484375 10.839844l36.085938 7.84375zm0 0"/>
+    </symbol> 
+    <symbol id="warranty"  viewBox="0 0 512 512">
+        <g><path d="m466 60h-11.834c-67.792 0-133.44-19.877-189.846-57.481-5.039-3.358-11.602-3.358-16.641 0-56.406 37.604-122.053 57.481-189.845 57.481h-11.834c-8.284 0-15 6.716-15 15v143.597c0 136.49 90.611 255.605 220.879 292.826 1.347.385 2.734.577 4.121.577s2.774-.192 4.121-.577c130.026-37.152 220.879-156.11 220.879-292.826v-143.597c0-8.284-6.716-15-15-15zm-15 158.597c0 120.494-79.972 227.926-195 262.767-115.028-34.841-195-142.273-195-262.767v-128.61c69.305-.583 136.447-20.269 195-57.116 58.553 36.847 125.695 56.533 195 57.116z"/><path d="m320.757 242.291c-8.135-1.628-16.026 3.643-17.651 11.765l-6.003 30c-1.626 8.124 3.642 16.026 11.765 17.652.994.199 1.983.294 2.959.294 7.003 0 13.267-4.93 14.692-12.06l6.003-30c1.625-8.122-3.642-16.025-11.765-17.651z"/><path d="m208.894 254.056c-1.625-8.122-9.521-13.391-17.651-11.765-8.123 1.625-13.391 9.528-11.765 17.652l6.003 30c1.427 7.13 7.688 12.06 14.692 12.06.975 0 1.966-.096 2.959-.294 8.123-1.625 13.391-9.528 11.765-17.652z"/><path d="m174.51 122.647c-6.822-4.7-16.163-2.979-20.862 3.843-4.7 6.822-2.979 16.163 3.843 20.862l50.294 34.648h-101.478c-10.455-.261-18.484 10.521-14.12 20.858l59.885 149.713c2.278 5.694 7.794 9.429 13.928 9.429h180c6.134 0 11.649-3.734 13.927-9.429l59.885-149.713c4.382-10.378-3.64-21.077-14.133-20.858h-101.464l50.295-34.647c6.822-4.7 8.543-14.04 3.843-20.862-4.7-6.821-14.038-8.543-20.862-3.843l-81.491 56.137zm161.335 209.353h-159.69l-48-120h255.689z"/><path d="m256 242c-8.284 0-15 6.716-15 15v30c0 8.284 6.716 15 15 15s15-6.716 15-15v-30c0-8.284-6.716-15-15-15z"/></g>
+    </symbol>  
+</svg>
+ 
+
+<script src="assets/js/vendor.min.js"></script> 
+<script src="assets/js/script.min.js"></script> 
+ 
+</body>
+</html>
