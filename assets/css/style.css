@@ -556,8 +556,6 @@ header.sticky {
         line-height: 18px;
         margin-top: 30px;
         text-align: center; }
-      .mac-price-scroll_item:hover {
-        background: #dae9ff; }
     .mac-price-scroll_item.active {
       border-color: #418edb;
       background: #418edb;
@@ -616,9 +614,6 @@ header.sticky {
         line-height: 14px; }
       .mac-price_block_item:nth-child(3n) {
         margin-right: 0; }
-      .mac-price_block_item:hover {
-        background: #0071e3;
-        color: #fff; }
     .mac-price_block_item.active {
       background: #0071e3;
       color: #fff; }
@@ -2690,6 +2685,11 @@ button.swiper-pagination-bullet {
               -ms-transform: translateY(15px);
                   transform: translateY(15px);
           opacity: 1; }
+  .mac-price_scrollbar_item:hover {
+    background: #dae9ff; }
+  .mac-price_block_item:hover {
+    background: #0071e3;
+    color: #fff; }
   .mac-price_form {
     min-height: 690px; } }
 
@@ -2719,6 +2719,9 @@ button.swiper-pagination-bullet {
     margin-left: 5px; }
     .ac-header_logo__text > div:last-child {
       font-size: 9px; }
+  .mac-price-scroll_item {
+    padding-top: 30px;
+    height: 200px; }
   .mac-price_block_item {
     padding-left: 15px;
     padding-right: 10px; }
@@ -2784,6 +2787,12 @@ button.swiper-pagination-bullet {
   .mac-main-banner {
     padding-top: 150px;
     padding-bottom: 100px; }
+  .mac-adv_item:active {
+    background: #0071e3; }
+    .mac-adv_item:active svg {
+      fill: #ffffff; }
+    .mac-adv_item:active h6 {
+      color: #fff; }
   .mac-price {
     padding-top: 30px; }
     .mac-price h3 {
