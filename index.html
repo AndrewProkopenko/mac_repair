@@ -235,13 +235,12 @@
                         <div class="swiper-wrapper">  
                                 <div class="swiper-slide" v-for="product in products" :key="product.id" >
                                     <div class="mac-price-scroll_item" 
-                                        :class="(isActiveProduct === product.id) ? 'active' : '' "  
+                                        :class="(isActiveProduct === product.id) ? 'active' : 'a' "   
                                         @click='setActiveProduct(product)'
                                     >
                                         <div class="mac-price-scroll_item__image" v-bind:style="{ 'background-image': 'url(assets/img/macbooks/' + product.url + ')' }"></div>
                                         <div class="mac-price-scroll_item__text">
-                                            {{ product.name }}
-                                            <div>  {{ product.year }}</div>
+                                            {{ product.name }} 
                                         </div>
                                     </div>
                                 </div>  
@@ -328,9 +327,9 @@
                             <p>
                                 Список поломок:
                             </p>
-                            <ul> 
-                                <li v-for="(service , index) in changedServices" :key='index'>
-                                    <i @click=' setActiveServices(service.id)'> 
+                            <ul :class="showAllLiButton ? 'show_all' : '' "> 
+                                <li v-for="(service , index) in changedServices" :key='index' @click=' setActiveServices(service.id)'>
+                                    <i > 
                                         <svg>
                                             <use xlink:href="#close"></use>
                                         </svg>
@@ -340,7 +339,14 @@
                                 <li>
                                      Выезд мастера и диагностика - Бесплатно
                                 </li>
+                                
                             </ul>
+                            <div  class="mac-price_form-list_services_btn">
+                                <button v-if="this.changedServices.length > 4 && !this.showAllLiButton" @click="showAllLi">
+                                    Показать все выбранные поломки ({{this.changedServices.length}})
+                                </button>
+                            </div>
+                          
                         </div>
                         
                        
@@ -951,8 +957,9 @@
 </svg>
  
 
-<script src="assets/js/vendor.min.js"></script> 
+<script src="assets/js/vendor.min.js"></script>  
+
 <script src="assets/js/script.min.js"></script> 
- 
+
 </body>
 </html>
