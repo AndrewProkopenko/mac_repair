@@ -323,17 +323,27 @@
                         <h5>
                             Вызовите мастера бесплатно
                         </h5>
-                        <p>
-                            Замена и ремонт интегрированных элементов, расположенной на материнской плате без учета стоимости запасных частей
-                        </p> 
-                        <div class="mac-price_form-select">
-                            <select class="priceSelect">
-                                <option selected>Замена элементов</option>
-                                <option>Замена блока питания </option>
-                                <option>Замена клавиатуры</option>
-                                <option>Замена макбука</option>  
-                            </select> 
+                       
+                        <div class="mac-price_form-list_services" v-if="this.changedServices.length > 0">
+                            <p>
+                                Список поломок:
+                            </p>
+                            <ul> 
+                                <li v-for="(service , index) in changedServices" :key='index'>
+                                    <i @click=' setActiveServices(service.id)'> 
+                                        <svg>
+                                            <use xlink:href="#close"></use>
+                                        </svg>
+                                    </i>
+                                    {{ service.description }} - от {{ service.activePrice }} Руб.
+                                </li>
+                                <li>
+                                     Выезд мастера и диагностика - Бесплатно
+                                </li>
+                            </ul>
                         </div>
+                        
+                       
                     <div v-if='this.formPriceSum > 0'>
                             <h6>
                                 Цена ремонта
@@ -347,7 +357,7 @@
                             </div>
                     </div>
                     <div v-else>
-                            <h6 class="mb-3">
+                            <h6 class="mb-5">
                                 Выберите поломку чтобы посчитать стоимость ремонта
                             </h6>
                     </div>
