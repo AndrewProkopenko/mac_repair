@@ -708,9 +708,9 @@ header.sticky {
               width: 15px;
               height: 15px;
               fill: #fa7b7bd7;
-              -webkit-transition: 300ms fill;
-              -o-transition: 300ms fill;
-              transition: 300ms fill; }
+              -webkit-transition: 300ms all;
+              -o-transition: 300ms all;
+              transition: 300ms all; }
             .mac-price_form-list_services ul li i:hover svg {
               fill: #ff0000; }
           .mac-price_form-list_services ul li:last-child {
@@ -733,6 +733,7 @@ header.sticky {
             .mac-price_form-list_services ul li:hover::before {
               opacity: 0; }
             .mac-price_form-list_services ul li:hover i {
+              fill: #fa7b7bd7;
               opacity: 1; }
       .mac-price_form-list_services_btn button {
         background: none;
@@ -3291,6 +3292,10 @@ button.swiper-pagination-bullet {
     width: 80%;
     margin-left: auto;
     margin-right: auto; }
+  .mac-price_form-list_services ul li i svg {
+    fill: #fa7b7b; }
+  .mac-price_form-list_services ul li:hover i svg {
+    fill: #ff0a0a; }
   .mac-adv_item h6 {
     width: 150px;
     left: -webkit-calc( 50% - 75px);
