@@ -100,7 +100,7 @@
                                 <use xlink:href="#map"></use>
                             </svg> 
                             <span>
-                                С Беслатным выездом к вам
+                                С Бесплатным выездом к вам
                             </span>
                         </h5>
                         <p>
@@ -156,7 +156,7 @@
                 в нашем сервисе вы получите
             </h3>
             <div class="row justify-content-center">
-                <div class="col-12 col-sm-6   col-lg-auto">
+                <div class="col-6 col-md-3   col-lg-auto">
                     <div class="mac-adv_item"  data-service=""  data-toggle="modal" data-target="#exampleModal">
                         <svg>
                             <use xlink:href="#search"></use>
@@ -167,7 +167,7 @@
                         </h6>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6   col-lg-auto">
+                <div class="col-6 col-md-3   col-lg-auto">
                     <div class="mac-adv_item"  data-service=""  data-toggle="modal" data-target="#exampleModal">
                         <svg>
                             <use xlink:href="#like"></use>
@@ -178,7 +178,7 @@
                         </h6>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6   col-lg-auto">
+                <div class="col-12 col-md-3  col-lg-auto">
                     <div class="mac-adv_item"  data-service=""  data-toggle="modal" data-target="#exampleModal">
                         <svg>
                             <use xlink:href="#settings"></use>
@@ -189,7 +189,7 @@
                         </h6>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6  col-lg-auto">
+                <div class="col-6 col-md-3  col-lg-auto">
                     <div class="mac-adv_item"  data-service=""  data-toggle="modal" data-target="#exampleModal">
                         <svg>
                             <use xlink:href="#warranty"></use>
@@ -200,7 +200,7 @@
                         </h6>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 pr-lg-0 col-lg-auto">
+                <div class="col-6 col-md-3 pr-lg-0 col-lg-auto">
                     <div class="mac-adv_item "  data-service=""  data-toggle="modal" data-target="#exampleModal">
                         <svg>
                             <use xlink:href="#sale"></use>
@@ -215,190 +215,10 @@
         </div>
     </div>
     <!-- advantages start -->
-      
+    
     <!-- prices start  -->  
+    <div id="prices"></div> 
     <div id="app">  
-        <div id="prices"></div>
-        <div class="mac-price heading">
-            <div class="container ">
-                <h3>
-                    Цены
-                    <span>
-                        на ремонт
-                    </span>
-                    MacBook
-                </h3>
-                <div class="mac-price-scroll">
-                    <div class="swiper-container">
-                        <div class="swiper-scrollbar"></div>
-                        
-                        <div class="swiper-wrapper">  
-                                <div class="swiper-slide" v-for="product in products" :key="product.id" >
-                                    <div class="mac-price-scroll_item" 
-                                        :class="(isActiveProduct === product.id) ? 'active' : 'a' "   
-                                        @click='setActiveProduct(product)'
-                                    >
-                                        <div class="mac-price-scroll_item__image" v-bind:style="{ 'background-image': 'url(assets/img/macbooks/' + product.url + ')' }"></div>
-                                        <div class="mac-price-scroll_item__text">
-                                            {{ product.name }} 
-                                        </div>
-                                    </div>
-                                </div>  
-                                
-                                
-                                
-                        </div> 
-                        
-                    </div>
-                </div>
-
-                <div class="d-flex flex-column flex-lg-row ">
-                    <div class="mac-price_block">
-                        <!-- Free services -->
-                        <div class="mac-price_block_item disabled">
-                            <div class="title">
-                                Выезд мастера
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="price">
-                                    Бесплатно
-                                </span>
-                                <span class="time">
-                                    от 1 часа
-                                </span>
-                            </div>
-                        </div>
-                        <div class="mac-price_block_item disabled">
-                            <div class="title ">
-                                Доставить в <br>
-                                сервис-центр и обратно
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="price">
-                                    Бесплатно
-                                </span>
-                                <span class="time">
-                                    от 1 часа
-                                </span>
-                            </div>
-                        </div>
-                        <div class="mac-price_block_item disabled">
-                            <div class="title">
-                                Диагностика  <br>
-                                Macbook Pro
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="price">
-                                    Бесплатно
-                                </span>
-                                <span class="time">
-                                    от 1 часа
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- loop service -->
-                        <div class="mac-price_block_item" 
-                            v-for='(service, index) in services' 
-                            :key="index"
-                            @click="setActiveServices(service.id)"
-                            :class="service.classActive ? 'active' : '' "
-                        >
-                            <div class="title">
-                                {{ service.name }}
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="price">  
-                                    от {{ service.activePrice  }} Руб. 
-                                </span>
-                                <span class="time">
-                                {{ service.time }} 
-                                </span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="mac-price_form">
-                        <h5>
-                            Вызовите мастера бесплатно
-                        </h5>
-                       
-                        <div class="mac-price_form-list_services" v-if="this.changedServices.length > 0">
-                            <p>
-                                Список поломок:
-                            </p>
-                            <ul :class="showAllLiButton ? 'show_all' : '' "> 
-                                <li v-for="(service , index) in changedServices" :key='index' @click=' setActiveServices(service.id)'>
-                                    <i > 
-                                        <svg>
-                                            <use xlink:href="#close"></use>
-                                        </svg>
-                                    </i>
-                                    {{ service.description }} - от {{ service.activePrice }} Руб.
-                                </li>
-                                <li>
-                                     Выезд мастера и диагностика - Бесплатно
-                                </li>
-                                
-                            </ul>
-                            <div  class="mac-price_form-list_services_btn">
-                                <button v-if="this.changedServices.length > 4 && !this.showAllLiButton" @click="showAllLi">
-                                    Показать все выбранные поломки ({{this.changedServices.length}})
-                                </button>
-                            </div>
-                          
-                        </div>
-                        
-                       
-                    <div v-if='this.formPriceSum > 0'>
-                            <h6>
-                                Цена ремонта
-                            </h6>
-                            <div class="mac-price_form-price ">
-                                от &nbsp;
-                                <div class="price">  
-                                    {{ this.formPriceSum }}
-                                </div>
-                                &nbsp; Рублей
-                            </div>
-                    </div>
-                    <div v-else>
-                            <h6 class="mb-5">
-                                Выберите поломку чтобы посчитать стоимость ремонта
-                            </h6>
-                    </div>
-                        <form>
-                            <div class="mac-price_form_group">
-                                <span>
-                                    <input type="hidden" name="services" v-model="formServices" >
-                                </span>
-                                <span>
-                                    <input type="hidden" name="product" v-model="changedProduct.name" >
-                                </span>
-                                <span>
-                                    <input type="hidden" name="price" v-model="formPriceSum" >
-                                </span>
-                                <span>
-                                    <input type="text" name="name" required placeholder="Ваше имя">
-                                </span>
-                                <span>
-                                    <input type="tel" name="phone" required placeholder="Ваш телефон">
-                                </span> 
-                                <div class="btn-form">
-                                    <button type="submit">
-                                        Вызвать мастера
-                                    </button>
-                                </div> 
-                            </div>
-                        </form>
-                        <span>
-                            Нажимая кнопку "Вызвать мастера" Вы соглашаетесь на обработку Ваших персональных данных
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div> 
     </div> 
     <!-- prices end -->
 
@@ -957,8 +777,7 @@
 </svg>
  
 
-<script src="assets/js/vendor.min.js"></script>  
-
+<script src="assets/js/vendor.min.js"></script>   
 <script src="assets/js/script.min.js"></script> 
 
 </body>

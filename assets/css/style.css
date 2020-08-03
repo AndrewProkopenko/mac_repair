@@ -389,7 +389,7 @@ header.sticky {
   .mac-main-banner_content p {
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: 20px; }
+    margin-bottom: 40px; }
   .mac-main-banner_content-form__group {
     display: -webkit-box;
     display: -webkit-flex;
@@ -470,8 +470,8 @@ header.sticky {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border: 1px dashed #0071e3;
     border-radius: 100%;
     -webkit-transition: 300ms all;
@@ -481,17 +481,17 @@ header.sticky {
     .mac-adv_item svg {
       position: relative;
       z-index: 2;
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
       fill: #000;
       -webkit-transition: 300ms all;
       -o-transition: 300ms all;
       transition: 300ms all; }
     .mac-adv_item h6 {
-      margin-top: 5px;
+      margin-top: 10px;
       padding: 0 10px;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 13px;
+      line-height: 13px;
       font-family: "SF Pro Display";
       text-align: center;
       color: #000;
@@ -2639,17 +2639,17 @@ button.swiper-pagination-bullet {
       background-repeat: no-repeat;
       background-size: contain; }
   .mac-adv {
-    padding-top: 115px;
-    padding-bottom: 85px; }
+    padding-top: 75px;
+    padding-bottom: 50px; }
     .mac-adv h3 {
-      padding-bottom: 70px; }
+      padding-bottom: 40px; }
     .mac-adv-mouse {
       position: relative; }
       .mac-adv-mouse_item {
         position: absolute;
-        top: -90px;
-        left: -webkit-calc(50% - 50px);
-        left: calc(50% - 50px);
+        top: -60px;
+        left: -webkit-calc(50% - 40px);
+        left: calc(50% - 40px);
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -2662,54 +2662,45 @@ button.swiper-pagination-bullet {
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center;
-        height: 140px;
-        width: 100px;
+        height: 110px;
+        width: 80px;
         border-radius: 50px;
         background: #0071e3; }
         .mac-adv-mouse_item svg {
-          width: 50px;
-          height: 65px;
+          width: 40px;
+          height: 50px;
           fill: #ffffff; }
         .mac-adv-mouse_item span {
           position: absolute;
           bottom: 0;
           left: 50%;
-          height: 35px;
+          height: 25px;
           border-left: 1px dashed #fff; }
-    .mac-adv_item {
-      width: 165px;
-      height: 165px; }
-      .mac-adv_item h6 {
-        position: absolute;
-        margin-top: 0;
-        padding: 0;
-        font-size: 16px;
-        line-height: 16px;
-        font-family: "SF Pro Display";
-        text-align: center;
-        color: #ecf3fc;
-        -webkit-transition: 300ms all;
-        -o-transition: 300ms all;
-        transition: 300ms all;
-        opacity: 0; }
-      .mac-adv_item svg {
-        width: 65px;
-        height: 65px; }
-      .mac-adv_item:hover {
-        background: #0071e3; }
-        .mac-adv_item:hover svg {
-          fill: #fff;
-          -webkit-transform: translateY(-30px);
-              -ms-transform: translateY(-30px);
-                  transform: translateY(-30px);
-          width: 45px;
-          height: 45px; }
-        .mac-adv_item:hover h6 {
-          color: #fff;
-          -webkit-transform: translateY(15px);
-              -ms-transform: translateY(15px);
-                  transform: translateY(15px);
-          opacity: 1; }
+    .mac-adv_item h6 {
+      position: absolute;
+      margin-top: 15px;
+      font-family: "SF Pro Display";
+      text-align: center;
+      color: #ecf3fc;
+      -webkit-transition: 300ms all;
+      -o-transition: 300ms all;
+      transition: 300ms all;
+      opacity: 0; }
+    .mac-adv_item:hover {
+      background: #0071e3; }
+      .mac-adv_item:hover svg {
+        fill: #fff;
+        -webkit-transform: translateY(-35px);
+            -ms-transform: translateY(-35px);
+                transform: translateY(-35px);
+        width: 35px;
+        height: 35px; }
+      .mac-adv_item:hover h6 {
+        color: #fff;
+        -webkit-transform: translateY(10px);
+            -ms-transform: translateY(10px);
+                transform: translateY(10px);
+        opacity: 1; }
   .mac-price_scrollbar_item:hover {
     background: #dae9ff; }
   .mac-price_block_item:hover {
@@ -2720,14 +2711,7 @@ button.swiper-pagination-bullet {
   .mac-main-banner-image .image {
     width: 515px;
     height: 340px;
-    top: 0; }
-  .mac-adv_item {
-    width: 200px !important;
-    height: 200px !important; }
-    .mac-adv_item:hover svg {
-      -webkit-transform: translateY(-40px) !important;
-          -ms-transform: translateY(-40px) !important;
-              transform: translateY(-40px) !important; } }
+    top: 0; } }
 
 @media screen and (max-width: 1200px) {
   .ac-header_collapse__select {
@@ -2744,11 +2728,13 @@ button.swiper-pagination-bullet {
       font-size: 9px; }
   .mac-price-scroll_item {
     padding-top: 30px;
-    height: 200px; }
+    height: 180px; }
+    .mac-price-scroll_item__text {
+      margin-top: 15px; }
   .mac-price_block_item {
     height: auto;
     padding-left: 15px;
-    padding-right: 10px; }
+    padding-right: 15px; }
     .mac-price_block_item .title {
       white-space: normal;
       line-height: 15px; }
@@ -2862,7 +2848,7 @@ button.swiper-pagination-bullet {
       margin-top: 35px;
       padding-top: 30px;
       padding-bottom: 30px;
-      height: auto; }
+      height: 150px; }
       .mac-price-scroll_item__text {
         margin-top: 10px; }
     .mac-price_block {
@@ -2997,6 +2983,12 @@ button.swiper-pagination-bullet {
         .mac-main-banner_content-form > span {
           font-size: 12px;
           line-height: 12px; }
+  .mac-adv_item {
+    margin-bottom: 0; }
+  .mac-price-scroll_item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 120px; }
   .mac-accordion {
     margin-top: 30px; }
     .mac-accordion h3 {
@@ -3123,11 +3115,21 @@ button.swiper-pagination-bullet {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 20px; }
+  .mac-main-banner_content p {
+    margin-bottom: 20px; }
   .mac-adv {
     padding-top: 30px;
     padding-bottom: 30px; }
     .mac-adv_item {
-      margin-bottom: 10px; }
+      border: 0;
+      width: auto;
+      height: auto; }
+      .mac-adv_item:active {
+        background: none; }
+        .mac-adv_item:active svg {
+          fill: #0071e3; }
+        .mac-adv_item:active h6 {
+          color: #0071e3; }
   .mac-price h3 {
     padding-bottom: 30px; }
   .mac-price-scroll {
